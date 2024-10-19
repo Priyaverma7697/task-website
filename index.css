@@ -3,6 +3,7 @@
   padding: 0px;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  scrollbar-width: none;
 }
 
 #bars {
@@ -11,6 +12,7 @@
 }
 
 label {
+  display: none;
   color: white;
 }
 
@@ -168,9 +170,9 @@ label {
 }
 
 #sec3 h1 {
-  position: relative;
-  top: 10px;
-  left: 100px;
+  position: absolute;
+  top: 1850px;
+  left: 600px;
 }
 
 .item3 img {
@@ -180,10 +182,10 @@ label {
 .grid2 {
   margin-top: 12px;
   margin-left: 40px;
-  margin-right: 40px;
   display: grid;
-  grid-template-columns: repeat(3, 420px);
-  justify-content: space-between;
+  grid-template-columns: repeat(3, 430px);
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 .grid3 {
@@ -222,9 +224,9 @@ label {
 }
 
 #sec4 h1 {
-  position: relative;
-  top: 15px;
-  left: 80px;
+  position: absolute;
+  top: 3680px;
+  left: 600px;
 }
 #sec4 img {
   position: relative;
@@ -509,6 +511,7 @@ label {
     display: none;
   }
   label {
+    display: block;
     position: absolute;
     z-index: 5000;
     top: 10px;
@@ -549,18 +552,17 @@ label {
   #sec4 {
     display: none;
   }
-  .grid2 {
-    display: block;
-  }
   .gridbutton {
     position: relative;
-    left: -80px;
+  }
+  .gridbutton .b4 {
+    display: none;
+  }
+  .gridbutton .b5 {
+    display: none;
   }
   .grid8 {
     display: block;
-  }
-  .grid9 {
-    display: none;
   }
   .grid10 {
     display: none;
@@ -586,7 +588,7 @@ label {
   }
   .item11 {
     margin: 40px;
-    font-size: 13px;
+    font-size: 12px;
   }
   .grid11 {
     margin-bottom: 20px;
